@@ -2,6 +2,7 @@
 @import url(styles/intro.css);
 @import url(styles/search-form.css);
 @import url(styles/benefits.css);
+@import url(styles/places.css);
 
 *,
 *::before,
@@ -24,7 +25,30 @@ img {
 
 .container {
 	margin: 0 auto;
-	padding: 0 15px;
-	max-width: 1090px;
+	/* padding: 0 15px; */
+	max-width: 1060px;
 }
 
+.container__full {
+	max-width: 1262px;
+	margin: 0 auto;
+}
+
+.section__title {
+	padding-bottom: 10px;
+	position: relative;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 42px;
+}
+
+.section__title::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 253px;
+	height: 3px;
+	background-color: #006DFE;
+}
