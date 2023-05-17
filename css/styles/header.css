@@ -1,12 +1,24 @@
 .header {
+	padding-top: 56px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	transition: .2s linear;
+	z-index: 100;
+}
+
+.header__active {
+	padding: 20px 0;
+	background-color: #0E1D28;
+	opacity: .93;
+}
+
+.header__active.header__wrapper {
+	padding: 0;
 }
 
 .header__wrapper {
-	padding-top: 56px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
