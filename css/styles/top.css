@@ -1,0 +1,91 @@
+.top {
+	margin-bottom: 86px;
+}
+
+.top__title {
+	margin-bottom: 54px;
+}
+
+.top__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 57px;
+}
+
+.top__card {
+	display: flex;
+	flex-direction: column;
+}
+
+.top__card-pic {
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.top__card-stats {
+	padding: 16px 25px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(21, 24, 36, 0.6);
+}
+
+.top__card-title {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 0 auto 0 0;
+}
+
+.top__card-likes, 
+.top__card-comment {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #fff;
+}
+
+.top__card-likes {
+	margin-right: 14px;
+	padding-right: 20px;
+	background: url(../../img/top/heart.svg) no-repeat right;
+}
+
+.top__card-comment {
+	padding-right: 23px;
+	background: url(../../img/top/commens.svg) no-repeat right;
+}
+
+.top__card-desc {
+	margin-bottom: 31px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #102746;
+}
+
+.top__card-more {
+	margin: auto 0 0 0;
+}
+
+.top__card-link {
+	display: inline-block;
+	padding: 12px 19px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #006DFE;
+	transition: background-color .2s linear;
+}
+
+.top__card-link:hover {
+	background-color: #1362c8;
+}
