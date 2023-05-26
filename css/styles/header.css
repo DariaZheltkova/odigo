@@ -82,6 +82,10 @@
 }
 
 @media(max-width: 767px) {
+	.header {
+		padding-top: 28px;
+	}
+
 	.header__nav {
 		padding: 75px;
 		width: 100%;
@@ -142,5 +146,11 @@
 
 	.header__burger {
 		display: block;
+	}
+}
+
+@media (max-width: 500px) {
+	.header__nav {
+		padding: 75px 30px;
 	}
 }

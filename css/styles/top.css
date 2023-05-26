@@ -8,13 +8,14 @@
 
 .top__cards {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	gap: 57px;
 }
 
 .top__card {
 	display: flex;
 	flex-direction: column;
+	grid-column: span 2;
 }
 
 .top__card-pic {
@@ -88,4 +89,33 @@
 
 .top__card-link:hover {
 	background-color: #1362c8;
+}
+
+@media (max-width: 960px) {
+	.top__cards {
+		column-gap: 25px;
+		row-gap: 60px;
+	}
+	
+	.top__card {
+		grid-column: span 3;
+	}
+
+	.top__card-pic {
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 767px) {
+	.top {
+		margin-bottom: 76px;
+	}
+	
+	.top__card {
+		grid-column: span 6;
+	}
+
+	.top__card-desc {
+		margin-bottom: 15px;
+	}
 }

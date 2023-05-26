@@ -44,3 +44,25 @@
 .footer_menu__link:active {
 	text-decoration: underline;
 }
+
+@media (max-width: 960px) {
+	.footer {
+		padding: 60px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.footer__logo {
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+	.footer__nav {
+		width: 100%;
+	}
+
+	.footer__menu {
+		width: 50%;
+		margin-bottom: 24px;
+	}
+}

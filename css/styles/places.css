@@ -97,3 +97,21 @@
 	height: 100%;
 	z-index: 4;
 }
+
+@media (max-width: 960px) {
+	.places__card_size__lg,
+	.places__card_size__sm {
+		grid-column: span 6;
+	}
+}
+
+@media (max-width: 767px) {
+	.places {
+		margin-bottom: 76px;
+	}
+
+	.places__card_size__lg,
+	.places__card_size__sm {
+		height: 240px;
+	}
+}

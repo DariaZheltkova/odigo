@@ -49,3 +49,26 @@
 .search__form__submit:active {
 	background-color: #1362c8;
 }
+
+@media (max-width: 960px) {
+	.search__form__field {
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	.search__form__field {
+		margin-right: 0;
+		width: 100%;
+		padding-bottom: 12px;
+		background: transparent url(../../img/circle-icon.svg) no-repeat left top;
+	}
+
+	.search__form__field::placeholder {
+		font-size: 16px;
+	}
+
+	.search__form__submit {
+		width: 100%;
+	}
+}

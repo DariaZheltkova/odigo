@@ -17,7 +17,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	background-color: #F2F2F2;
+	/* background-color: #F2F2F2; */
 }
 
 img {
@@ -56,4 +56,14 @@ img {
 	width: 253px;
 	height: 3px;
 	background-color: #006DFE;
+}
+
+@media (max-width: 767px) {
+	.section__title {
+		margin-bottom: 25px;
+	}
+
+	.section__title::after {
+		width: 78px;
+	}
 }
